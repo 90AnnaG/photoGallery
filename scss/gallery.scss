@@ -1,0 +1,97 @@
+@import "_mixins-project-5";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @include body-style;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-container {
+  @include header-container;
+
+  &__my-gitHub {
+    @include gh-icon;
+  }
+
+  &__project-name {
+    @include project-name;
+  }
+}
+
+.main-container {
+  @include main-container-style;
+
+  &__project-description {
+    @include project-description;
+  }
+
+  .lightbox {
+    @include lightbox;
+
+    &__smallImage {
+      @include small_image;
+    }
+
+    &__smallImage:hover {
+      transform : scale(0.9);
+      transition: 0.5s;
+    }
+
+    .modal {
+      @include modal;
+
+      &__bigImage {
+        @include big_image;
+      }
+
+      /* The close button */
+      &__closeButton {
+        @include close_button;
+      }
+
+      &__closeButton:hover,
+      &__closeButton:focus {
+        color: #c73b3b;
+      }
+
+      &__prevButton,
+      &__nextButton {
+        @include prev_nextButtons;
+      }
+
+      &__prevButton {
+        @include prev_button;
+      }
+
+      &__nextButton {
+        @include next_button;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      &__prevButton:hover,
+      &__nextButton:hover {
+        background-color: #000000cc;
+      }
+    }
+
+    .show_modal {
+      display: block;
+    }
+  }
+}
+
+.footer {
+  @include footer;
+
+  &__copyright {
+    @include footer-copyright;
+  }
+}
