@@ -33,8 +33,8 @@ a {
     @include project-description;
   }
 
-  .lightbox {
-    @include lightbox;
+  .gallery {
+    @include gallery;
 
     &__smallImage {
       @include small_image;
@@ -44,49 +44,41 @@ a {
       transform : scale(0.9);
       transition: 0.5s;
     }
+  }
 
-    .modal {
-      @include modal;
+  .modal {
+    @include modal;
 
-      &__bigImage {
-        @include big_image;
-      }
-
-      /* The close button */
-      &__closeButton {
-        @include close_button;
-      }
-
-      &__closeButton:hover,
-      &__closeButton:focus {
-        color: #c73b3b;
-      }
-
-      &__prevButton,
-      &__nextButton {
-        @include prev_nextButtons;
-      }
-
-      &__prevButton {
-        @include prev_button;
-      }
-
-      &__nextButton {
-        @include next_button;
-      }
-
-      /* On hover, add a black background color with a little bit see-through */
-      &__prevButton:hover,
-      &__nextButton:hover {
-        background-color: #000000cc;
-      }
+    &__close-btn {
+      @include closeButton;
     }
 
-    .show_modal {
-      display: block;
+    &__close-btn:hover,
+    &__close-btn:focus {
+      color : #e61a1a;
+      cursor: pointer;
+    }
+
+    .fullscreenImg {
+      @include fullscreen_image;
+    }
+
+    &__prevBtn,
+    &__nextBtn {
+      @include prev-nextBtn;
+    }
+
+    &__nextBtn {
+      @include nextBtn;
+    }
+
+    &__prevBtn:hover,
+    &__nextBtn:hover {
+      background-color: #998181cc;
     }
   }
 }
+
 
 .footer {
   @include footer;

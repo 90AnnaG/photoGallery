@@ -1,34 +1,12 @@
-const modal = document.querySelector('.modal');
-const closeModalBtn = document.getElementById('closeModal');
-const slides = document.getElementsByClassName('modal__bigImage');
+const myModal = document.querySelector('.modal');
+const photos = document.querySelectorAll('.gallery__smallImage')
+const closeModalBtn = document.querySelector('.modal__close-btn');
+const prevImgBtn = document.querySelector('#prevButton');
+const nextImgBtn = document.querySelector('#nextButton');
 
-function openModal() {
-    modal.classList.add('show_modal');
-}
 
-closeModalBtn.addEventListener('click', function (e) {
-    if (modal.className = 'show_modal') {
-        modal.classList.add('.modal');
-    }
+// click close button to close modal
+closeModalBtn.addEventListener('click', () => {
+    myModal.style.display = 'none';
 });
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    slides[slideIndex - 1].style.display = 'block';
-}

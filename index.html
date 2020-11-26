@@ -20,51 +20,25 @@
    <main class="main-container">
       <h2 class="main-container__project-description">Lightbox</h2>
 
-      <section class="lightbox">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/1small.jpg"
-            onclick="openModal();currentSlide(1)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/2small.jpg"
-            onclick="openModal();currentSlide(2)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/3small.jpg"
-            onclick="openModal();currentSlide(3)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/4small.jpg"
-            onclick="openModal();currentSlide(4)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/5small.jpg"
-            onclick="openModal();currentSlide(5)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/6small.jpg"
-            onclick="openModal();currentSlide(6)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/7small.jpg"
-            onclick="openModal();currentSlide(7)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/8small.jpg"
-            onclick="openModal();currentSlide(8)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/9small.jpg"
-            onclick="openModal();currentSlide(9)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/10small.jpg"
-            onclick="openModal();currentSlide(10)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/11small.jpg"
-            onclick="openModal();currentSlide(11)">
-         <img class="lightbox__smallImage" alt="Photo" src="images/img_gallery/img_small/12small.jpg"
-            onclick="openModal();currentSlide(12)">
-
-         <div id="myModal" class="modal">
-            <span id="closeModal" class="modal__closeButton">&times;</span>
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/1.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/2.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/3.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/4.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/5.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/6.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/7.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/8.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/9.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/10.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/11.jpg">
-            <img class="modal__bigImage" alt="Big Photo" src="images/img_gallery/img_big/12.jpg">
-
-            <span class="modal__prevButton" onclick="plusSlides(-1)">&#10094;</span>
-            <span class="modal__nextButton" onclick="plusSlides(1)">&#10095;</span>
-         </div>
+      <section class="gallery">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/1.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/2.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/3.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/4.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/5.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/6.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/7.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/8.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/9.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/10.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/11.jpg">
+         <img class="gallery__smallImage" alt="Photo" src="images/img_gallery/img_big/12.jpg">
       </section>
+      <div class="modal">
+         <span class="modal__close-btn">&times;</span>
+         <span id="prevButton" class="modal__prevBtn">&#10094;</span>
+         <span id="nextButton" class="modal__nextBtn">&#10095;</span>
+      </div>
    </main>
 
    <footer class="footer">
