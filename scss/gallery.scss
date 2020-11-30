@@ -36,6 +36,18 @@ a {
   .gallery {
     @include gallery;
 
+    .lightbox {
+      @include lightbox;
+    }
+
+    .lightbox.active {
+      @include lightbox_active;
+    }
+
+    .lightbox img {
+      @include lightbox_img;
+    }
+
     &__smallImage {
       @include small_image;
     }
@@ -45,40 +57,7 @@ a {
       transition: 0.5s;
     }
   }
-
-  .modal {
-    @include modal;
-
-    &__close-btn {
-      @include closeButton;
-    }
-
-    &__close-btn:hover,
-    &__close-btn:focus {
-      color : #e61a1a;
-      cursor: pointer;
-    }
-
-    .fullscreenImg {
-      @include fullscreen_image;
-    }
-
-    &__prevBtn,
-    &__nextBtn {
-      @include prev-nextBtn;
-    }
-
-    &__nextBtn {
-      @include nextBtn;
-    }
-
-    &__prevBtn:hover,
-    &__nextBtn:hover {
-      background-color: #998181cc;
-    }
-  }
 }
-
 
 .footer {
   @include footer;
