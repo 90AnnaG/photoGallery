@@ -1,4 +1,3 @@
-// mixins for project-1_form
 @import "_variables";
 @import "_breakpoints";
 
@@ -77,55 +76,55 @@
 }
 
 @mixin gallery {
+    margin  : 10px 0;
+    overflow: auto;
+    padding   : 0;
     text-align: center;
     width     : 98%;
-    overflow  : auto;
-    margin    : 10px 0;
-    padding   : 0;
 }
 
 @mixin small_image {
     border    : 1px solid #fff;
     cursor    : pointer;
     height    : 25%;
-    width     : 15%;
     margin-top: 5px;
+    width     : 15%;
 }
 
 @mixin lightbox {
-    width           : 100%;
-    height          : 100%;
     background-color: #000000a6;
     cursor          : pointer;
     display         : none;
-    position        : fixed;
-    z-index         : 1;
-    top             : 0;
+    height          : 100%;
     left            : 0;
+    position        : fixed;
+    top             : 0;
+    width           : 100%;
+    z-index         : 1;
 }
 
 @mixin lightbox_active {
+    align-items    : center;
     display        : block;
     justify-content: center;
-    align-items    : center;
     padding-top    : 130px;
 }
 
 @mixin lightbox_img {
-    max-width : 90%;
-    max-height: 80%;
     border    : 2px solid #ffffff;
     cursor    : auto;
+    max-height: 80%;
     margin    : 0;
+    max-width : 90%;
 }
 
 @mixin footer {
     background-color: $containers_background-color;
+    bottom          : 0;
     height          : 15px;
     margin-top      : 10px;
     padding-top     : 5px;
     position        : fixed;
-    bottom          : 0;
     text-align      : center;
     width           : 100%;
 
